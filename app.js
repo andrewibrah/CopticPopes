@@ -1,0 +1,505 @@
+// Coptic Popes Data
+const popesData = [
+  {
+    id: 1,
+    number: 114,
+    name: 'Pope Macarius III',
+    coptic_name: 'Ⲡⲁⲡⲁ Ⲁⲃⲃⲁ Ⲙⲁⲕⲁⲣⲓⲟⲥ',
+    birth_name: 'Macarius',
+    birth_place: 'El-Mahalla El-Kubra, Egypt',
+    birth_year: 1872,
+    death_year: 1945,
+    papacy_start: 'February 19, 1944',
+    papacy_end: 'August 31, 1945',
+    years_served: 1.5,
+    era: 'World War II Era',
+    color: '#6B4423',
+    image: 'https://via.placeholder.com/150x200/6B4423/FFFFFF?text=Pope+Macarius+III',
+    biography: 'Born February 18, 1872, in El-Mahalla El-Kubra to a respected family. He joined the Baramous Monastery in 1895 and was ordained as Metropolitan of Assiut in 1897 by Pope Cyril V. He served as metropolitan for 47 years before becoming pope. He was the second metropolitan to become pope in Coptic Church history.',
+    achievements: [
+      'Issued historic monastery reform document (February 22, 1944)',
+      'Promoted spiritual and educational development of monks',
+      'Defended family law for non-Muslim Egyptians',
+      'Held immense Coptic conference in Assiut (1910)',
+      'Implemented monastery accountability systems'
+    ],
+    challenges: [
+      'Major conflict between Holy Synod and General Congregation Council',
+      'Forced into exile at monasteries (St. Anthony and St. Paul)',
+      'Disputed Personal Status Law for non-Muslims',
+      'Short papacy of only 18 months',
+      'Church governance crisis'
+    ],
+    cultural_impact: 'Established precedent for administrative reform and accountability in monastic institutions. His reform efforts, though controversial, laid groundwork for modern church governance. The conflicts during his reign highlighted the need for clear separation between ecclesiastical and lay authority.',
+    legacy: "Despite his short reign, Pope Macarius III's commitment to reform and his defense of church canons set important precedents for future church leadership.",
+    context: 'Reigned during World War II under King Farouk I. Egypt was experiencing social and political transformation, with increasing tensions between traditional and modern governance systems.'
+  },
+  {
+    id: 2,
+    number: 115,
+    name: 'Pope Joseph II (Yosab II)',
+    coptic_name: 'Ⲡⲁⲡⲁ Ⲁⲃⲃⲁ Ⲓⲱⲥⲏⲫ',
+    birth_name: 'Yusab',
+    birth_place: 'Egypt',
+    birth_year: 1875,
+    death_year: 1956,
+    papacy_start: 'May 26, 1946',
+    papacy_end: 'November 14, 1956',
+    years_served: 10,
+    era: 'Post-WWII / Egyptian Revolution Era',
+    color: '#4A6FA5',
+    image: 'https://via.placeholder.com/150x200/4A6FA5/FFFFFF?text=Pope+Joseph+II',
+    biography: 'Metropolitan of Girga before becoming pope. He was the third bishop/metropolitan to become pope in church history. His papacy witnessed significant institutional developments but was marred by governance challenges.',
+    achievements: [
+      'Founded the Institute of Coptic Studies in 1954',
+      'Granted Ethiopian Orthodox Church full autocephaly',
+      'Appointed first Ethiopian-born metropolitan archbishop',
+      'Rebuilt St. Mark\'s Church in Alexandria (1950-1952)',
+      'Advanced theological education'
+    ],
+    challenges: [
+      'Kidnapped by political activists (July 1954)',
+      'Corruption allegations and simony accusations',
+      'Power usurped by secretary Malik who sold ecclesiastical ranks',
+      'Removed from office by Holy Synod (1956)',
+      'First pope in Coptic history to be deposed',
+      'Church managed by 3-bishop committee after removal'
+    ],
+    cultural_impact: "Despite personal failings, Pope Joseph II's establishment of the Institute of Coptic Studies created lasting infrastructure for theological education. His granting of autocephaly to Ethiopia marked a historic shift in inter-church relations across Africa.",
+    legacy: 'His tumultuous reign highlighted the need for stronger papal authority and clearer governance structures. The Institute of Coptic Studies remains one of the most important educational institutions in the Coptic Orthodox Church.',
+    context: "Served during the transition from King Farouk's monarchy to Nasser's revolutionary government. This period saw dramatic social and political upheaval in Egypt."
+  },
+  {
+    id: 3,
+    number: 116,
+    name: 'Pope Cyril VI (Kyrillos VI)',
+    coptic_name: 'Ⲡⲁⲡⲁ Ⲁⲃⲃⲁ Ⲕⲩⲣⲓⲗⲗⲟⲥ',
+    birth_name: 'Mina Ata (Father Mina the Hermit)',
+    birth_place: 'Damanhour, Egypt',
+    birth_year: 1902,
+    death_year: 1971,
+    papacy_start: 'May 10, 1959',
+    papacy_end: 'March 9, 1971',
+    years_served: 12,
+    era: 'Nasser Era / Cold War',
+    color: '#6B3FA0',
+    image: 'https://pplx-res.cloudinary.com/image/upload/v1762468199/pplx_project_search_images/09eb50ba81d2e4eb466b9c86d1e9e00fc9c5ee38.png',
+    biography: "Born Mina Ata in 1902, he lived as a hermit for many years in a cave he carved himself. Known as 'Father Mina the Hermit,' he was the only monk in the 20th century to become pope without first being a bishop. Renowned for his life of prayer and over 12,000 liturgies celebrated. Canonized as a saint in 2013.",
+    achievements: [
+      'Zeitoun Marian Apparitions (April 1968-1971) witnessed by millions',
+      "Returned St. Mark's relics from Venice to Cairo (1968)",
+      "Built St. Mark's Cathedral in Cairo (1965-1968)",
+      'Monastery of St. Mina in Desert of Mariout',
+      'Dismantled lay council control, restored papal authority',
+      'Friendship with President Nasser stabilized church-state relations',
+      'Prayed over 12,000 liturgies - unprecedented record',
+      'Monastic revival and monastery renovations'
+    ],
+    challenges: [
+      "Nasser's nationalization policies affecting church property",
+      'Managing church during socialist government',
+      'Restoring monasteries that had declined to small numbers',
+      'Navigating political tensions of 1960s Egypt'
+    ],
+    cultural_impact: 'The Zeitoun apparitions became one of the most documented Marian apparitions in history, witnessed by Muslims, Christians, and Jews alike. President Nasser himself witnessed the apparitions. These miracles sparked massive spiritual revival across Egypt and the Christian world. Pope Cyril VI\'s deep spirituality and prayer life became legendary.',
+    legacy: 'Canonized as a saint in 2013, just 42 years after his death—an unprecedented rapid canonization. His spiritual strength and miraculous events during his papacy continue to inspire millions. He transformed the Coptic Church from a marginalized institution to a respected spiritual force.',
+    context: "Reigned during Nasser's Arab socialism, Six-Day War (1967), and Cold War tensions. Despite political challenges, maintained positive relationship with government through spiritual authenticity rather than political maneuvering."
+  },
+  {
+    id: 4,
+    number: 117,
+    name: 'Pope Shenouda III',
+    coptic_name: 'Ⲡⲁⲡⲁ Ⲁⲃⲃⲁ Ϣⲉⲛⲟⲩⲧⲉ',
+    birth_name: 'Nazeer Roufail',
+    birth_place: 'Asyut, Egypt',
+    birth_year: 1923,
+    death_year: 2012,
+    papacy_start: 'November 14, 1971',
+    papacy_end: 'March 17, 2012',
+    years_served: 41,
+    era: 'Late 20th - Early 21st Century',
+    color: '#D4AF37',
+    image: 'https://pplx-res.cloudinary.com/image/upload/v1762468199/pplx_project_search_images/650260a93cb5fdbfc267ddd40d4ce286aa2851f2.png',
+    biography: 'Born Nazeer Roufail in 1923. Graduated from Cairo University Faculty of Arts and worked as teacher and journalist before choosing monastic life. As a bishop, he was suspended in 1966 by Pope Cyril VI for advocating reforms, but they later reconciled. Became the 117th pope with the longest papacy in modern Coptic history.',
+    achievements: [
+      '41-year papacy—longest in modern era',
+      'Expanded Coptic Church globally - 250+ parishes in North America (up from 4)',
+      'First Coptic Pope to visit Vatican in 1,500 years (1973)',
+      'Signed Christological declaration with Pope Paul VI',
+      'Established monasteries outside Egypt (9 total)',
+      'Led ecumenical dialogues with Orthodox and Protestant churches',
+      'Tripled Sunday School enrollment',
+      'Ordained hundreds of monks, priests, and bishops',
+      'Weekly sermons attended by 7,000+ in Cairo Cathedral',
+      'Built global Coptic diaspora identity'
+    ],
+    challenges: [
+      'House arrest by President Sadat (September 1981-January 1985)',
+      "Confronted Sadat's Islamization policies in 1970s",
+      'Led demonstrations against government discrimination',
+      'Sectarian violence throughout papacy',
+      'Church-state tensions with multiple Egyptian presidents',
+      'Managed massive Coptic emigration waves',
+      'Navigated rise of political Islam',
+      'Dispute over Ethiopian church properties in Jerusalem'
+    ],
+    cultural_impact: 'Transformed the Coptic Church into a global institution. His activism in the 1970s made him a political figure representing Coptic rights. Created a unified Coptic diaspora identity across continents. His weekly sermons and theological writings educated millions. Became the face and voice of Coptic Christianity worldwide.',
+    legacy: "Known as 'The Patriarch of the Golden Era.' His papacy witnessed the greatest expansion of Coptic Orthodoxy since ancient times. Established the modern template for church-state relations in Egypt. His theological writings and sermons continue to be studied globally. Created infrastructure for Coptic communities worldwide.",
+    context: 'Served through Sadat and Mubarak presidencies, Camp David Accords, rise of political Islam, Egyptian Revolution 2011. Navigated dramatic political changes while maintaining church unity and expanding global presence.'
+  },
+  {
+    id: 5,
+    number: 118,
+    name: 'Pope Tawadros II',
+    coptic_name: 'Ⲡⲁⲡⲁ Ⲁⲃⲃⲁ Ⲑⲉⲟ́ⲇⲱⲣⲟⲥ',
+    birth_name: 'Wagih Sobhi Baqi Suleiman',
+    birth_place: 'Mansoura, Egypt',
+    birth_year: 1952,
+    death_year: null,
+    papacy_start: 'November 18, 2012',
+    papacy_end: 'Present',
+    years_served: 12,
+    era: 'Digital Age / Post-Arab Spring',
+    color: '#2C8C99',
+    image: 'https://pplx-res.cloudinary.com/image/upload/v1762468200/pplx_project_search_images/eb205c38a0054a3e48e99d177e364396d0fca3e8.png',
+    biography: 'Born November 4, 1952, in Mansoura. Studied pharmacy at University of Alexandria (1975), managed pharmaceutical factory. Joined Monastery of St. Pishoy in 1986, ordained monk (1988), priest (1990), general bishop (1997). Selected as 118th pope on his 60th birthday through traditional lot-drawing ceremony with blindfolded child.',
+    achievements: [
+      'Cathedral of the Nativity of Christ in New Administrative Capital (2019)',
+      'New church headquarters at Triangle of Hope, New Cairo',
+      'Consecrated 60 bishops, ordained 400+ priests',
+      'Church Construction Law enacted (2016) - ended decades of restrictions',
+      'Inaugurated Central Papal Library at Logos (2019)',
+      'Legalized thousands of existing churches',
+      'Established 6 regional ecclesiastical committees',
+      'Published standard curriculum for theological education',
+      "First Divine Liturgy at St. Mark's Church, New Administrative Capital (2024)",
+      'Expanded charity and social welfare programs nationwide'
+    ],
+    challenges: [
+      'Alexandria Cathedral bombing (Palm Sunday 2017) - escaped unharmed',
+      'Post-revolution Egypt instability (2012-2014)',
+      'ISIS attacks on Coptic Christians',
+      'Navigating church role in new Egyptian republic',
+      'Sectarian violence incidents',
+      'Modernizing church administration for digital age',
+      'Balancing tradition with contemporary needs'
+    ],
+    cultural_impact: "Leading the church in the digital age with modern communication strategies. The Cathedral of the Nativity became a symbol of Egypt's new republic and religious coexistence. His papacy emphasizes institutional development, education, and social services. Represents a new generation of Coptic leadership focused on building infrastructure for future growth.",
+    legacy: 'Building legacy of institutional strength and modern church infrastructure. The massive cathedral projects represent the largest Coptic building projects in centuries. His focus on legal frameworks (Church Construction Law) provides long-term stability. Emphasis on education and structured administration is modernizing the entire church structure.',
+    context: "Assumed papacy during post-revolution turmoil under President Morsi, then transitioned to President El-Sisi's government. Navigating Egypt's 'New Republic' vision with unprecedented government support for Christian infrastructure. Managing church in era of terrorism threats while building for future growth."
+  }
+];
+
+// Timeline Events Data
+const timelineEvents = [
+  { year: 1944, event: 'Pope Macarius III begins papacy', pope: 'Macarius III', description: 'Second metropolitan to become pope in Coptic history' },
+  { year: 1944, event: 'Monastery reform document issued', pope: 'Macarius III', description: 'Historic document aimed at reforming monasteries and promoting education' },
+  { year: 1945, event: 'Pope Macarius III departs', pope: 'Macarius III', description: 'Died after 18-month papacy marked by church governance conflicts' },
+  { year: 1946, event: 'Pope Joseph II enthroned', pope: 'Joseph II', description: 'Metropolitan of Girga becomes 115th pope' },
+  { year: 1954, event: 'Institute of Coptic Studies founded', pope: 'Joseph II', description: 'Major theological education institution established' },
+  { year: 1954, event: 'Pope Joseph II kidnapped', pope: 'Joseph II', description: 'Kidnapped by political activists demanding resignation' },
+  { year: 1956, event: 'Ethiopian Church granted autocephaly', pope: 'Joseph II', description: 'Historic granting of independence to Ethiopian Orthodox Church' },
+  { year: 1956, event: 'Pope Joseph II removed from office', pope: 'Joseph II', description: 'First pope in Coptic history to be deposed by Holy Synod' },
+  { year: 1959, event: 'Pope Cyril VI becomes pope', pope: 'Cyril VI', description: 'Father Mina the Hermit becomes 116th pope' },
+  { year: 1968, event: 'Zeitoun Marian Apparitions begin', pope: 'Cyril VI', description: "Virgin Mary appears over St. Mary's Church for 3 years, witnessed by millions" },
+  { year: 1968, event: "St. Mark's relics return from Venice", pope: 'Cyril VI', description: 'Pope Paul VI returns relics to Egypt after centuries' },
+  { year: 1971, event: "St. Mark's Cathedral Cairo completed", pope: 'Cyril VI', description: 'New cathedral becomes center of Coptic Orthodox Church' },
+  { year: 1971, event: 'Pope Shenouda III enthroned', pope: 'Shenouda III', description: 'Beginning of 41-year papacy - longest in modern history' },
+  { year: 1973, event: 'First Coptic Pope visits Vatican in 1,500 years', pope: 'Shenouda III', description: 'Historic meeting with Pope Paul VI, signed Christological declaration' },
+  { year: 1981, event: 'Pope Shenouda III placed under house arrest', pope: 'Shenouda III', description: 'President Sadat exiles pope to monastery for political activism' },
+  { year: 1985, event: 'Pope Shenouda III released', pope: 'Shenouda III', description: 'President Mubarak releases pope, restores relations' },
+  { year: 2012, event: 'Pope Shenouda III departs', pope: 'Shenouda III', description: 'End of 41-year papacy, millions mourn globally' },
+  { year: 2012, event: 'Pope Tawadros II enthroned', pope: 'Tawadros II', description: 'Selected by traditional lot-drawing on his 60th birthday' },
+  { year: 2016, event: 'Church Construction Law enacted', pope: 'Tawadros II', description: 'Historic law ends decades of church building restrictions' },
+  { year: 2017, event: 'Alexandria Cathedral bombing', pope: 'Tawadros II', description: 'ISIS attack kills 17, pope escapes unharmed' },
+  { year: 2019, event: 'Cathedral of Nativity inaugurated', pope: 'Tawadros II', description: 'Largest cathedral in Middle East opened in New Administrative Capital' },
+  { year: 2024, event: 'New headquarters Triangle of Hope dedicated', pope: 'Tawadros II', description: 'Modern church complex in New Cairo begins operations' }
+];
+
+// Key Historical Events for Accordion
+const keyEvents = [
+  {
+    title: 'Zeitoun Marian Apparitions (1968-1971)',
+    description: "One of the most documented Marian apparitions in history occurred at St. Mary's Coptic Orthodox Church in Zeitoun, Cairo. The Virgin Mary appeared over the church dome multiple times over three years, witnessed by millions including Muslims, Christians, Jews, and President Gamal Abdel Nasser himself. The apparitions were photographed and filmed, creating unprecedented documentation. This miraculous event sparked a massive spiritual revival across Egypt and the Christian world during Pope Cyril VI's papacy."
+  },
+  {
+    title: 'Vatican Visit (1973)',
+    description: 'Pope Shenouda III made history as the first Coptic Pope to visit the Vatican in 1,500 years. This landmark visit with Pope Paul VI resulted in the signing of a Christological declaration that resolved theological differences dating back to the Council of Chalcedon in 451 AD. This monumental achievement opened new doors for ecumenical dialogue and demonstrated the possibility of healing ancient schisms through mutual understanding and respect.'
+  },
+  {
+    title: 'Institute of Coptic Studies (1954)',
+    description: 'Pope Joseph II founded the Institute of Coptic Studies in 1954, creating one of the most important centers for Coptic theological education, language preservation, and cultural heritage. The institute became crucial in training clergy, preserving the Coptic language, and researching Coptic history and traditions. Despite the controversies of Pope Joseph II\'s papacy, this institution remains his most enduring legacy and continues to serve the church today.'
+  },
+  {
+    title: 'Ethiopian Church Autocephaly (1956)',
+    description: 'Under Pope Joseph II, the Ethiopian Orthodox Tewahedo Church was granted full autocephaly (ecclesiastical independence) in 1956. For over 1,600 years, the Ethiopian Church had been under the jurisdiction of the Coptic Pope. This historic decision appointed the first Ethiopian-born metropolitan archbishop and recognized the maturity and independence of the Ethiopian Church. This act of ecclesiastical generosity marked a new era in inter-African Orthodox church relations.'
+  },
+  {
+    title: 'House Arrest (1981-1985)',
+    description: "Pope Shenouda III's confrontation with President Anwar Sadat over Islamization policies led to his house arrest from September 1981 to January 1985. Sadat exiled the pope to a desert monastery, dissolved the Holy Synod, and appointed a committee to manage church affairs. This unprecedented crisis tested the church's resilience. After Sadat's assassination and with President Mubarak's rise, Pope Shenouda was released, and this experience actually strengthened his stature as a defender of Coptic rights."
+  },
+  {
+    title: 'Cathedral of the Nativity (2019)',
+    description: "Pope Tawadros II inaugurated the Cathedral of the Nativity of Christ in Egypt's New Administrative Capital in 2019, the largest cathedral in the Middle East. President Abdel Fattah El-Sisi attended the inauguration, symbolizing a new era of church-state relations. This massive architectural achievement represents the largest Coptic building project in centuries and stands as a symbol of Christian presence and religious coexistence in modern Egypt."
+  },
+  {
+    title: 'Church Construction Law (2016)',
+    description: 'After decades of severe restrictions on church building and repair, the Church Construction Law was enacted in 2016 under Pope Tawadros II. This historic legislation ended discriminatory practices that had prevented Christians from building or even repairing churches without presidential approval. The law legalized thousands of existing churches that had operated in legal limbo and provided a clear framework for future church construction, fundamentally changing the legal landscape for Egyptian Christians.'
+  }
+];
+
+// Impact Analysis Data
+const impactDimensions = [
+  { label: 'Institutional Development', scores: [6, 7, 8, 10, 9] },
+  { label: 'Spiritual Revival', scores: [5, 4, 10, 9, 7] },
+  { label: 'Global Expansion', scores: [2, 3, 5, 10, 8] },
+  { label: 'Church-State Relations', scores: [4, 3, 7, 8, 9] },
+  { label: 'Infrastructure Building', scores: [5, 6, 8, 7, 10] }
+];
+
+// Initialize Application
+function init() {
+  renderTimeline();
+  renderPopeCards();
+  renderImpactAnalysis();
+  renderAccordion();
+  renderComparisonTable();
+  setupScrollEffects();
+  setupNavigation();
+}
+
+// Render Timeline
+function renderTimeline() {
+  const container = document.getElementById('timelineScroll');
+  container.innerHTML = timelineEvents.map(event => `
+    <div class="timeline-event" style="border-top: 4px solid ${getPopeColor(event.pope)}">
+      <div class="timeline-year">${event.year}</div>
+      <div class="timeline-pope">${event.pope}</div>
+      <div class="timeline-title">${event.event}</div>
+      <div class="timeline-description">${event.description}</div>
+    </div>
+  `).join('');
+}
+
+function getPopeColor(popeName) {
+  const popeColors = {
+    'Macarius III': '#6B4423',
+    'Joseph II': '#4A6FA5',
+    'Cyril VI': '#6B3FA0',
+    'Shenouda III': '#D4AF37',
+    'Tawadros II': '#2C8C99'
+  };
+  return popeColors[popeName] || '#2C8C99';
+}
+
+// Render Pope Cards
+function renderPopeCards() {
+  const container = document.getElementById('popeCards');
+  container.innerHTML = popesData.map((pope, index) => `
+    <div class="pope-card" style="border-top: 4px solid ${pope.color}">
+      <div class="pope-card-header" onclick="togglePopeCard(${index})">
+        <img src="${pope.image}" alt="${pope.name}" class="pope-portrait" onerror="this.src='https://via.placeholder.com/150x200/${pope.color.replace('#', '')}/FFFFFF?text=${encodeURIComponent(pope.name)}'">
+        <div class="pope-info">
+          <div class="pope-number">${pope.number}th Pope of Alexandria</div>
+          <h3 class="pope-name">${pope.name}</h3>
+          <div class="pope-coptic-name">${pope.coptic_name}</div>
+          <div class="pope-birth-name">Birth Name: ${pope.birth_name}</div>
+          <div class="pope-years">${pope.papacy_start} - ${pope.papacy_end}</div>
+          <div class="pope-era">${pope.era} • ${pope.years_served} year${pope.years_served !== 1 ? 's' : ''} served</div>
+          <button class="expand-btn" id="expandBtn${index}">
+            <span>Learn More</span>
+            <span class="expand-icon">▼</span>
+          </button>
+        </div>
+      </div>
+      <div class="pope-card-content" id="popeContent${index}">
+        <div class="pope-tabs">
+          <button class="tab-btn active" onclick="switchTab(${index}, 0)">Biography</button>
+          <button class="tab-btn" onclick="switchTab(${index}, 1)">Achievements</button>
+          <button class="tab-btn" onclick="switchTab(${index}, 2)">Challenges</button>
+          <button class="tab-btn" onclick="switchTab(${index}, 3)">Cultural Impact</button>
+          <button class="tab-btn" onclick="switchTab(${index}, 4)">Historical Context</button>
+        </div>
+        <div class="tab-content active" id="tab${index}-0">
+          <h4>Biography</h4>
+          <p>${pope.biography}</p>
+        </div>
+        <div class="tab-content" id="tab${index}-1">
+          <h4>Major Achievements</h4>
+          <ul class="achievement-list">
+            ${pope.achievements.map(a => `<li>${a}</li>`).join('')}
+          </ul>
+        </div>
+        <div class="tab-content" id="tab${index}-2">
+          <h4>Challenges &amp; Trials</h4>
+          <ul class="challenge-list">
+            ${pope.challenges.map(c => `<li>${c}</li>`).join('')}
+          </ul>
+        </div>
+        <div class="tab-content" id="tab${index}-3">
+          <h4>Cultural Impact</h4>
+          <p>${pope.cultural_impact}</p>
+          <h4 style="margin-top: 1.5rem;">Legacy</h4>
+          <p>${pope.legacy}</p>
+        </div>
+        <div class="tab-content" id="tab${index}-4">
+          <h4>Historical Context</h4>
+          <p>${pope.context}</p>
+          <p style="margin-top: 1rem;"><strong>Years:</strong> ${pope.birth_year}${pope.death_year ? ` - ${pope.death_year}` : ' - Present'}</p>
+          <p><strong>Birth Place:</strong> ${pope.birth_place}</p>
+        </div>
+      </div>
+    </div>
+  `).join('');
+}
+
+function togglePopeCard(index) {
+  const content = document.getElementById(`popeContent${index}`);
+  const btn = document.getElementById(`expandBtn${index}`);
+  
+  content.classList.toggle('expanded');
+  btn.classList.toggle('expanded');
+}
+
+function switchTab(popeIndex, tabIndex) {
+  // Hide all tabs for this pope
+  for (let i = 0; i < 5; i++) {
+    const tab = document.getElementById(`tab${popeIndex}-${i}`);
+    if (tab) tab.classList.remove('active');
+  }
+  
+  // Remove active class from all tab buttons for this pope
+  const popeCard = document.getElementById('popeCards').children[popeIndex];
+  const tabButtons = popeCard.querySelectorAll('.tab-btn');
+  tabButtons.forEach(btn => btn.classList.remove('active'));
+  
+  // Activate selected tab
+  const selectedTab = document.getElementById(`tab${popeIndex}-${tabIndex}`);
+  if (selectedTab) selectedTab.classList.add('active');
+  
+  // Activate selected button
+  if (tabButtons[tabIndex]) tabButtons[tabIndex].classList.add('active');
+}
+
+// Render Impact Analysis
+function renderImpactAnalysis() {
+  const container = document.getElementById('impactGrid');
+  const popeNames = ['Macarius III', 'Joseph II', 'Cyril VI', 'Shenouda III', 'Tawadros II'];
+  
+  container.innerHTML = impactDimensions.map(dimension => {
+    const avgScore = dimension.scores.reduce((a, b) => a + b, 0) / dimension.scores.length;
+    return `
+      <div class="impact-item">
+        <div class="impact-label">${dimension.label}</div>
+        <div class="impact-bar">
+          <div class="impact-fill" style="width: ${avgScore * 10}%"></div>
+        </div>
+        <div style="font-size: 0.85rem; color: var(--color-text-secondary); margin-top: 0.5rem;">
+          Average: ${avgScore.toFixed(1)}/10
+        </div>
+      </div>
+    `;
+  }).join('');
+}
+
+// Render Accordion
+function renderAccordion() {
+  const container = document.getElementById('accordionEvents');
+  container.innerHTML = keyEvents.map((event, index) => `
+    <div class="accordion-item">
+      <div class="accordion-header" onclick="toggleAccordion(${index})" id="accordionHeader${index}">
+        <div class="accordion-title">${event.title}</div>
+        <div class="accordion-icon">▼</div>
+      </div>
+      <div class="accordion-content" id="accordionContent${index}">
+        <div class="accordion-body">${event.description}</div>
+      </div>
+    </div>
+  `).join('');
+}
+
+function toggleAccordion(index) {
+  const header = document.getElementById(`accordionHeader${index}`);
+  const content = document.getElementById(`accordionContent${index}`);
+  
+  header.classList.toggle('active');
+  content.classList.toggle('active');
+}
+
+// Render Comparison Table
+function renderComparisonTable() {
+  const tbody = document.getElementById('comparisonTableBody');
+  tbody.innerHTML = popesData.map(pope => `
+    <tr>
+      <td><strong>${pope.name}</strong><br><small>${pope.number}th Pope</small></td>
+      <td>${pope.years_served} years<br><small>${pope.papacy_start.split(',')[0]} - ${pope.papacy_end.split(',')[0] || 'Present'}</small></td>
+      <td>${pope.achievements[0]}</td>
+      <td>${pope.challenges[0]}</td>
+      <td>${pope.legacy.substring(0, 120)}...</td>
+    </tr>
+  `).join('');
+}
+
+// Setup Scroll Effects
+function setupScrollEffects() {
+  const sections = document.querySelectorAll('.section');
+  const backToTop = document.getElementById('backToTop');
+  
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+      }
+    });
+  }, { threshold: 0.1 });
+  
+  sections.forEach(section => observer.observe(section));
+  
+  // Back to top button
+  window.addEventListener('scroll', () => {
+    if (window.pageYOffset > 500) {
+      backToTop.classList.add('visible');
+    } else {
+      backToTop.classList.remove('visible');
+    }
+  });
+}
+
+// Setup Navigation
+function setupNavigation() {
+  const navLinks = document.querySelectorAll('.nav-links a');
+  
+  window.addEventListener('scroll', () => {
+    let current = '';
+    const sections = document.querySelectorAll('.section, .hero');
+    
+    sections.forEach(section => {
+      const sectionTop = section.offsetTop;
+      const sectionHeight = section.clientHeight;
+      if (pageYOffset >= (sectionTop - 200)) {
+        current = section.getAttribute('id');
+      }
+    });
+    
+    navLinks.forEach(link => {
+      link.classList.remove('active');
+      if (link.getAttribute('href').substring(1) === current) {
+        link.classList.add('active');
+      }
+    });
+  });
+}
+
+// Toggle Mobile Menu
+function toggleMenu() {
+  const navLinks = document.getElementById('navLinks');
+  navLinks.classList.toggle('active');
+}
+
+// Scroll to Top
+function scrollToTop() {
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
+// Initialize on page load
+window.addEventListener('DOMContentLoaded', init);
