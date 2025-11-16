@@ -1,3 +1,5 @@
+import './style.css';
+
 // Coptic Popes Data
 const popesData = [
   {
@@ -500,6 +502,13 @@ function toggleMenu() {
 function scrollToTop() {
   window.scrollTo({ top: 0, behavior: 'smooth' });
 }
+
+// Expose handlers for inline event bindings
+window.togglePopeCard = togglePopeCard;
+window.switchTab = switchTab;
+window.toggleAccordion = toggleAccordion;
+window.toggleMenu = toggleMenu;
+window.scrollToTop = scrollToTop;
 
 // Initialize on page load
 window.addEventListener('DOMContentLoaded', init);
