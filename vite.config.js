@@ -1,5 +1,5 @@
 import { defineConfig } from 'vite';
 
 export default defineConfig({
-  base: '/CopticPopes-1/'
+  base: '/CopticPopes/'
 });
