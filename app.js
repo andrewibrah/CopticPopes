@@ -257,6 +257,154 @@ const impactDimensions = [
   { label: 'Infrastructure Building', scores: [5, 6, 8, 7, 10] }
 ];
 
+// Translation Data
+const translations = {
+  en: {
+    heroTitle: 'The Last Five Coptic Orthodox Popes',
+    heroSubtitle: 'A Legacy of Faith, Leadership & Cultural Impact',
+    heroYears: '114th - 118th Successors of St. Mark (1942 - Present)',
+    navBrand: 'Coptic Heritage',
+    navOverview: 'Overview',
+    navTimeline: 'Timeline',
+    navPopes: 'Popes',
+    navImpact: 'Impact Analysis',
+    navEvents: 'Historical Events',
+    navComparison: 'Quick View',
+    overviewTitle: 'Overview of the Papacy',
+    overviewDescription: 'The Coptic Orthodox Church traces its apostolic succession through St. Mark the Evangelist. The last five popes have led the church through extraordinary times, from World War II through the digital age, facing challenges and achieving remarkable growth.',
+    statYearsCovered: 'Years Covered',
+    statYearsRange: '(1942-2025)',
+    statPopes: 'Popes',
+    statPopesRange: '(114th-118th)',
+    statLongestPapacy: 'Longest Papacy',
+    statLongestName: 'Pope Shenouda III',
+    statShortestPapacy: 'Shortest Papacy',
+    statShortestName: 'Pope Macarius III',
+    timelineTitle: 'Interactive Timeline',
+    timelineDescription: 'Journey through 82+ years of Coptic Orthodox history, from 1942 to the present day',
+    popesTitle: 'The Five Popes',
+    popesDescription: 'Explore the lives, achievements, and lasting legacies of each patriarch',
+    popeOfAlexandria: 'Pope of Alexandria',
+    birthName: 'Birth Name',
+    learnMore: 'Learn More',
+    yearServed: 'year',
+    yearsServed: 'years',
+    served: 'served',
+    tabBiography: 'Biography',
+    tabAchievements: 'Achievements',
+    tabChallenges: 'Challenges',
+    tabCulturalImpact: 'Cultural Impact',
+    tabHistoricalContext: 'Historical Context',
+    biographyHeader: 'Biography',
+    achievementsHeader: 'Major Achievements',
+    challengesHeader: 'Challenges & Trials',
+    culturalImpactHeader: 'Cultural Impact',
+    legacyHeader: 'Legacy',
+    historicalContextHeader: 'Historical Context',
+    yearsLabel: 'Years:',
+    birthPlaceLabel: 'Birth Place:',
+    present: 'Present',
+    impactTitle: 'Impact Analysis',
+    impactDescription: 'Comparative assessment across key dimensions of papal leadership',
+    impactInstitutional: 'Institutional Development',
+    impactSpiritual: 'Spiritual Revival',
+    impactGlobal: 'Global Expansion',
+    impactChurchState: 'Church-State Relations',
+    impactInfrastructure: 'Infrastructure Building',
+    average: 'Average',
+    eventsTitle: 'Key Historical Events',
+    eventsDescription: 'Major milestones that shaped the modern Coptic Orthodox Church',
+    comparisonTitle: 'Quick Comparison View',
+    comparisonDescription: 'Side-by-side analysis of all five popes',
+    thPope: 'Pope',
+    thYearsServed: 'Years Served',
+    thKeyAchievement: 'Key Achievement',
+    thMajorChallenge: 'Major Challenge',
+    thCulturalLegacy: 'Cultural Legacy',
+    footerEducational: 'Educational Resource:',
+    footerDescription: 'This educational resource celebrates the spiritual leadership and cultural impact of the Coptic Orthodox Church.',
+    footerVisit: 'For more information, visit the',
+    footerLink: 'Official Coptic Orthodox Church Website',
+    footerCopyright: '© 2025 Coptic Heritage Dashboard. All rights reserved.'
+  },
+  ar: {
+    heroTitle: 'آخر خمسة باباوات للكنيسة القبطية الأرثوذكسية',
+    heroSubtitle: 'إرث من الإيمان والقيادة والتأثير الثقافي',
+    heroYears: 'الخلفاء ١١٤ - ١١٨ للقديس مرقس (١٩٤٢ - حتى الآن)',
+    navBrand: 'التراث القبطي',
+    navOverview: 'نظرة عامة',
+    navTimeline: 'الجدول الزمني',
+    navPopes: 'الباباوات',
+    navImpact: 'تحليل التأثير',
+    navEvents: 'الأحداث التاريخية',
+    navComparison: 'عرض سريع',
+    overviewTitle: 'نظرة عامة على البابوية',
+    overviewDescription: 'تتتبع الكنيسة القبطية الأرثوذكسية خلافتها الرسولية من خلال القديس مرقس الإنجيلي. قاد الباباوات الخمسة الأخيرون الكنيسة خلال أوقات استثنائية، من الحرب العالمية الثانية حتى العصر الرقمي، مواجهين التحديات ومحققين نموًا ملحوظًا.',
+    statYearsCovered: 'السنوات المغطاة',
+    statYearsRange: '(١٩٤٢-٢٠٢٥)',
+    statPopes: 'الباباوات',
+    statPopesRange: '(١١٤-١١٨)',
+    statLongestPapacy: 'أطول بابوية',
+    statLongestName: 'البابا شنودة الثالث',
+    statShortestPapacy: 'أقصر بابوية',
+    statShortestName: 'البابا مكاريوس الثالث',
+    timelineTitle: 'الجدول الزمني التفاعلي',
+    timelineDescription: 'رحلة عبر أكثر من ٨٢ عامًا من تاريخ الكنيسة القبطية الأرثوذكسية، من ١٩٤٢ حتى يومنا هذا',
+    popesTitle: 'الباباوات الخمسة',
+    popesDescription: 'استكشف حياة وإنجازات وإرث كل بطريرك',
+    popeOfAlexandria: 'بابا الإسكندرية',
+    birthName: 'اسم الميلاد',
+    learnMore: 'اعرف المزيد',
+    yearServed: 'سنة',
+    yearsServed: 'سنوات',
+    served: 'في الخدمة',
+    tabBiography: 'السيرة الذاتية',
+    tabAchievements: 'الإنجازات',
+    tabChallenges: 'التحديات',
+    tabCulturalImpact: 'التأثير الثقافي',
+    tabHistoricalContext: 'السياق التاريخي',
+    biographyHeader: 'السيرة الذاتية',
+    achievementsHeader: 'الإنجازات الرئيسية',
+    challengesHeader: 'التحديات والمحن',
+    culturalImpactHeader: 'التأثير الثقافي',
+    legacyHeader: 'الإرث',
+    historicalContextHeader: 'السياق التاريخي',
+    yearsLabel: 'السنوات:',
+    birthPlaceLabel: 'مكان الميلاد:',
+    present: 'حتى الآن',
+    impactTitle: 'تحليل التأثير',
+    impactDescription: 'تقييم مقارن عبر الأبعاد الرئيسية للقيادة البابوية',
+    impactInstitutional: 'التطوير المؤسسي',
+    impactSpiritual: 'النهضة الروحية',
+    impactGlobal: 'التوسع العالمي',
+    impactChurchState: 'العلاقات بين الكنيسة والدولة',
+    impactInfrastructure: 'بناء البنية التحتية',
+    average: 'المتوسط',
+    eventsTitle: 'الأحداث التاريخية الرئيسية',
+    eventsDescription: 'المعالم الرئيسية التي شكلت الكنيسة القبطية الأرثوذكسية الحديثة',
+    comparisonTitle: 'عرض المقارنة السريعة',
+    comparisonDescription: 'تحليل جنبًا إلى جنب لجميع الباباوات الخمسة',
+    thPope: 'البابا',
+    thYearsServed: 'سنوات الخدمة',
+    thKeyAchievement: 'الإنجاز الرئيسي',
+    thMajorChallenge: 'التحدي الرئيسي',
+    thCulturalLegacy: 'الإرث الثقافي',
+    footerEducational: 'مورد تعليمي:',
+    footerDescription: 'يحتفل هذا المورد التعليمي بالقيادة الروحية والتأثير الثقافي للكنيسة القبطية الأرثوذكسية.',
+    footerVisit: 'لمزيد من المعلومات، قم بزيارة',
+    footerLink: 'الموقع الرسمي للكنيسة القبطية الأرثوذكسية',
+    footerCopyright: '© ٢٠٢٥ لوحة التراث القبطي. جميع الحقوق محفوظة.'
+  }
+};
+
+// Current language state
+let currentLanguage = 'en';
+
+// Helper to get translation
+function t(key) {
+  return translations[currentLanguage][key] || translations.en[key] || key;
+}
+
 // Initialize Application
 function init() {
   initLanguage();
@@ -278,9 +426,91 @@ function init() {
   }
 }
 
+// Initialize language from localStorage
+function initLanguage() {
+  const savedLanguage = localStorage.getItem('preferredLanguage');
+  if (savedLanguage && savedLanguage !== 'en') {
+    currentLanguage = savedLanguage;
+    document.documentElement.lang = currentLanguage;
+    document.documentElement.dir = currentLanguage === 'ar' ? 'rtl' : 'ltr';
+  }
+}
+
+// Expose to window for inline onclick handlers
+window.toggleLanguage = function () {
+  currentLanguage = currentLanguage === 'en' ? 'ar' : 'en';
+  document.documentElement.lang = currentLanguage;
+  document.documentElement.dir = currentLanguage === 'ar' ? 'rtl' : 'ltr';
+
+  const track = document.getElementById('languageToggleTrack');
+  const activeFlag = document.getElementById('activeFlag');
+
+  if (currentLanguage === 'ar') {
+    track.classList.add('ar');
+    activeFlag.textContent = '🇪🇬';
+  } else {
+    track.classList.remove('ar');
+    activeFlag.textContent = '🇺🇸';
+  }
+
+  updateTranslations();
+  localStorage.setItem('preferredLanguage', currentLanguage);
+};
+
+// Update all translatable UI
+function updateTranslations() {
+  document.querySelector('.hero h1').textContent = t('heroTitle');
+  document.querySelector('.hero-subtitle').textContent = t('heroSubtitle');
+  document.querySelector('.hero-years').textContent = t('heroYears');
+  document.querySelector('.nav-container > div').textContent = t('navBrand');
+
+  const navLinks = document.querySelectorAll('.nav-links a');
+  navLinks[0].textContent = t('navOverview');
+  navLinks[1].textContent = t('navTimeline');
+  navLinks[2].textContent = t('navPopes');
+  navLinks[3].textContent = t('navImpact');
+  navLinks[4].textContent = t('navEvents');
+  navLinks[5].textContent = t('navComparison');
+
+  document.querySelector('#overview .section-header h2').textContent = t('overviewTitle');
+  document.querySelector('#overview .section-header p').textContent = t('overviewDescription');
+  const statCards = document.querySelectorAll('#overview .stat-card');
+  statCards[0].querySelector('.stat-label').innerHTML = `${t('statYearsCovered')}<br>${t('statYearsRange')}`;
+  statCards[1].querySelector('.stat-label').innerHTML = `${t('statPopes')}<br>${t('statPopesRange')}`;
+  statCards[2].querySelector('.stat-label').innerHTML = `${t('statLongestPapacy')}<br>${t('statLongestName')}`;
+  statCards[3].querySelector('.stat-label').innerHTML = `${t('statShortestPapacy')}<br>${t('statShortestName')}`;
+
+  document.querySelector('#timeline .section-header h2').textContent = t('timelineTitle');
+  document.querySelector('#timeline .section-header p').textContent = t('timelineDescription');
+  document.querySelector('#popes .section-header h2').textContent = t('popesTitle');
+  document.querySelector('#popes .section-header p').textContent = t('popesDescription');
+  document.querySelector('#impact .section-header h2').textContent = t('impactTitle');
+  document.querySelector('#impact .section-header p').textContent = t('impactDescription');
+  document.querySelector('#events .section-header h2').textContent = t('eventsTitle');
+  document.querySelector('#events .section-header p').textContent = t('eventsDescription');
+  document.querySelector('#comparison .section-header h2').textContent = t('comparisonTitle');
+  document.querySelector('#comparison .section-header p').textContent = t('comparisonDescription');
+
+  const tableHeaders = document.querySelectorAll('.comparison-table th');
+  tableHeaders[0].textContent = t('thPope');
+  tableHeaders[1].textContent = t('thYearsServed');
+  tableHeaders[2].textContent = t('thKeyAchievement');
+  tableHeaders[3].textContent = t('thMajorChallenge');
+  tableHeaders[4].textContent = t('thCulturalLegacy');
+
+  const footerPs = document.querySelectorAll('.footer p');
+  footerPs[0].innerHTML = `<strong>${t('footerEducational')}</strong> ${t('footerDescription')}`;
+  footerPs[1].innerHTML = `${t('footerVisit')} <a href="https://www.copticchurch.net" target="_blank">${t('footerLink')}</a>`;
+  footerPs[2].textContent = t('footerCopyright');
+
+  renderPopeCards();
+  renderImpactAnalysis();
+}
+
 // Render Timeline
 function renderTimeline() {
   const container = document.getElementById('timelineScroll');
+  if (!container) return;
   container.innerHTML = timelineEvents.map(event => `
     <div class="timeline-event" style="border-top: 4px solid ${getPopeColor(event.pope)}">
       <div class="timeline-year">${event.year}</div>
@@ -305,107 +535,107 @@ function getPopeColor(popeName) {
 // Render Pope Cards
 function renderPopeCards() {
   const container = document.getElementById('popeCards');
+  if (!container) return;
   container.innerHTML = popesData.map((pope, index) => `
     <div class="pope-card" style="border-top: 4px solid ${pope.color}">
       <div class="pope-card-header" onclick="togglePopeCard(${index})">
         <img src="${pope.image}" alt="${pope.name}" class="pope-portrait" onerror="this.src='https://via.placeholder.com/150x200/${pope.color.replace('#', '')}/FFFFFF?text=${encodeURIComponent(pope.name)}'">
         <div class="pope-info">
-          <div class="pope-number">${pope.number}th Pope of Alexandria</div>
+          <div class="pope-number">${pope.number}${currentLanguage === 'ar' ? ' ' : 'th '}${t('popeOfAlexandria')}</div>
           <h3 class="pope-name">${pope.name}</h3>
           <div class="pope-coptic-name">${pope.coptic_name}</div>
-          <div class="pope-birth-name">Birth Name: ${pope.birth_name}</div>
+          <div class="pope-birth-name">${t('birthName')}: ${pope.birth_name}</div>
           <div class="pope-years">${pope.papacy_start} - ${pope.papacy_end}</div>
-          <div class="pope-era">${pope.era} • ${pope.years_served} year${pope.years_served !== 1 ? 's' : ''} served</div>
+          <div class="pope-era">${pope.era} • ${pope.years_served} ${pope.years_served !== 1 ? t('yearsServed') : t('yearServed')} ${t('served')}</div>
           <button class="expand-btn" id="expandBtn${index}">
-            <span>Learn More</span>
+            <span>${t('learnMore')}</span>
             <span class="expand-icon">▼</span>
           </button>
         </div>
       </div>
       <div class="pope-card-content" id="popeContent${index}">
         <div class="pope-tabs">
-          <button class="tab-btn active" onclick="switchTab(${index}, 0)">Biography</button>
-          <button class="tab-btn" onclick="switchTab(${index}, 1)">Achievements</button>
-          <button class="tab-btn" onclick="switchTab(${index}, 2)">Challenges</button>
-          <button class="tab-btn" onclick="switchTab(${index}, 3)">Cultural Impact</button>
-          <button class="tab-btn" onclick="switchTab(${index}, 4)">Historical Context</button>
+          <button class="tab-btn active" onclick="switchTab(${index}, 0)">${t('tabBiography')}</button>
+          <button class="tab-btn" onclick="switchTab(${index}, 1)">${t('tabAchievements')}</button>
+          <button class="tab-btn" onclick="switchTab(${index}, 2)">${t('tabChallenges')}</button>
+          <button class="tab-btn" onclick="switchTab(${index}, 3)">${t('tabCulturalImpact')}</button>
+          <button class="tab-btn" onclick="switchTab(${index}, 4)">${t('tabHistoricalContext')}</button>
         </div>
         <div class="tab-content active" id="tab${index}-0">
-          <h4>Biography</h4>
+          <h4>${t('biographyHeader')}</h4>
           <p>${pope.biography}</p>
         </div>
         <div class="tab-content" id="tab${index}-1">
-          <h4>Major Achievements</h4>
+          <h4>${t('achievementsHeader')}</h4>
           <ul class="achievement-list">
             ${pope.achievements.map(a => `<li>${a}</li>`).join('')}
           </ul>
         </div>
         <div class="tab-content" id="tab${index}-2">
-          <h4>Challenges &amp; Trials</h4>
+          <h4>${t('challengesHeader')}</h4>
           <ul class="challenge-list">
             ${pope.challenges.map(c => `<li>${c}</li>`).join('')}
           </ul>
         </div>
         <div class="tab-content" id="tab${index}-3">
-          <h4>Cultural Impact</h4>
+          <h4>${t('culturalImpactHeader')}</h4>
           <p>${pope.cultural_impact}</p>
-          <h4 style="margin-top: 1.5rem;">Legacy</h4>
+          <h4 style="margin-top: 1.5rem;">${t('legacyHeader')}</h4>
           <p>${pope.legacy}</p>
         </div>
         <div class="tab-content" id="tab${index}-4">
-          <h4>Historical Context</h4>
+          <h4>${t('historicalContextHeader')}</h4>
           <p>${pope.context}</p>
-          <p style="margin-top: 1rem;"><strong>Years:</strong> ${pope.birth_year}${pope.death_year ? ` - ${pope.death_year}` : ' - Present'}</p>
-          <p><strong>Birth Place:</strong> ${pope.birth_place}</p>
+          <p style="margin-top: 1rem;"><strong>${t('yearsLabel')}</strong> ${pope.birth_year}${pope.death_year ? ` - ${pope.death_year}` : ` - ${t('present')}`}</p>
+          <p><strong>${t('birthPlaceLabel')}</strong> ${pope.birth_place}</p>
         </div>
       </div>
     </div>
   `).join('');
 }
 
-function togglePopeCard(index) {
+window.togglePopeCard = function (index) {
   const content = document.getElementById(`popeContent${index}`);
   const btn = document.getElementById(`expandBtn${index}`);
-
+  if (!content || !btn) return;
   content.classList.toggle('expanded');
   btn.classList.toggle('expanded');
-}
+};
 
-function switchTab(popeIndex, tabIndex) {
-  // Hide all tabs for this pope
+window.switchTab = function (popeIndex, tabIndex) {
   for (let i = 0; i < 5; i++) {
     const tab = document.getElementById(`tab${popeIndex}-${i}`);
     if (tab) tab.classList.remove('active');
   }
-
-  // Remove active class from all tab buttons for this pope
   const popeCard = document.getElementById('popeCards').children[popeIndex];
   const tabButtons = popeCard.querySelectorAll('.tab-btn');
   tabButtons.forEach(btn => btn.classList.remove('active'));
-
-  // Activate selected tab
   const selectedTab = document.getElementById(`tab${popeIndex}-${tabIndex}`);
   if (selectedTab) selectedTab.classList.add('active');
-
-  // Activate selected button
   if (tabButtons[tabIndex]) tabButtons[tabIndex].classList.add('active');
-}
+};
 
 // Render Impact Analysis
 function renderImpactAnalysis() {
   const container = document.getElementById('impactGrid');
-  const popeNames = ['Macarius III', 'Joseph II', 'Cyril VI', 'Shenouda III', 'Tawadros II'];
-
-  container.innerHTML = impactDimensions.map(dimension => {
+  if (!container) return;
+  const dimensionLabels = [
+    t('impactInstitutional'),
+    t('impactSpiritual'),
+    t('impactGlobal'),
+    t('impactChurchState'),
+    t('impactInfrastructure')
+  ];
+  container.innerHTML = impactDimensions.map((dimension, index) => {
     const avgScore = dimension.scores.reduce((a, b) => a + b, 0) / dimension.scores.length;
     return `
       <div class="impact-item">
-        <div class="impact-label">${dimension.label}</div>
+        <div class="impact-label">${dimensionLabels[index]}</div>
         <div class="impact-bar">
           <div class="impact-fill" style="width: ${avgScore * 10}%"></div>
         </div>
         <div style="font-size: 0.85rem; color: var(--color-text-secondary); margin-top: 0.5rem;">
-          Average: ${avgScore.toFixed(1)}/10
+          ${t('average')}: ${avgScore.toFixed(1)}/10
         </div>
       </div>
     `;
@@ -415,6 +645,7 @@ function renderImpactAnalysis() {
 // Render Accordion
 function renderAccordion() {
   const container = document.getElementById('accordionEvents');
+  if (!container) return;
   container.innerHTML = keyEvents.map((event, index) => `
     <div class="accordion-item">
       <div class="accordion-header" onclick="toggleAccordion(${index})" id="accordionHeader${index}">
@@ -428,17 +659,18 @@ function renderAccordion() {
   `).join('');
 }
 
-function toggleAccordion(index) {
+window.toggleAccordion = function (index) {
   const header = document.getElementById(`accordionHeader${index}`);
   const content = document.getElementById(`accordionContent${index}`);
-
+  if (!header || !content) return;
   header.classList.toggle('active');
   content.classList.toggle('active');
-}
+};
 
 // Render Comparison Table
 function renderComparisonTable() {
   const tbody = document.getElementById('comparisonTableBody');
+  if (!tbody) return;
   tbody.innerHTML = popesData.map(pope => `
     <tr>
       <td><strong>${pope.name}</strong><br><small>${pope.number}th Pope</small></td>
@@ -454,7 +686,6 @@ function renderComparisonTable() {
 function setupScrollEffects() {
   const sections = document.querySelectorAll('.section');
   const backToTop = document.getElementById('backToTop');
-
   const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
@@ -462,10 +693,7 @@ function setupScrollEffects() {
       }
     });
   }, { threshold: 0.1 });
-
   sections.forEach(section => observer.observe(section));
-
-  // Back to top button
   window.addEventListener('scroll', () => {
     if (window.pageYOffset > 500) {
       backToTop.classList.add('visible');
@@ -478,19 +706,15 @@ function setupScrollEffects() {
 // Setup Navigation
 function setupNavigation() {
   const navLinks = document.querySelectorAll('.nav-links a');
-
   window.addEventListener('scroll', () => {
     let current = '';
     const sections = document.querySelectorAll('.section, .hero');
-
     sections.forEach(section => {
       const sectionTop = section.offsetTop;
-      const sectionHeight = section.clientHeight;
       if (pageYOffset >= (sectionTop - 200)) {
         current = section.getAttribute('id');
       }
     });
-
     navLinks.forEach(link => {
       link.classList.remove('active');
       if (link.getAttribute('href').substring(1) === current) {
@@ -500,16 +724,14 @@ function setupNavigation() {
   });
 }
 
-// Toggle Mobile Menu
-function toggleMenu() {
+window.toggleMenu = function () {
   const navLinks = document.getElementById('navLinks');
-  navLinks.classList.toggle('active');
-}
+  if (navLinks) navLinks.classList.toggle('active');
+};
 
-// Scroll to Top
-function scrollToTop() {
+window.scrollToTop = function () {
   window.scrollTo({ top: 0, behavior: 'smooth' });
-}
+};
 
 // Initialize on page load
 window.addEventListener('DOMContentLoaded', init);
