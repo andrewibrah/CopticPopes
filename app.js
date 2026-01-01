@@ -1,5 +1,3 @@
-import './style.css';
-
 // Coptic Popes Data
 const popesData = [
   {
@@ -261,6 +259,7 @@ const impactDimensions = [
 
 // Initialize Application
 function init() {
+  initLanguage();
   renderTimeline();
   renderPopeCards();
   renderImpactAnalysis();
@@ -268,6 +267,15 @@ function init() {
   renderComparisonTable();
   setupScrollEffects();
   setupNavigation();
+  updateTranslations();
+
+  // Update language toggle UI
+  const track = document.getElementById('languageToggleTrack');
+  const activeFlag = document.getElementById('activeFlag');
+  if (currentLanguage === 'ar') {
+    track.classList.add('ar');
+    activeFlag.textContent = '🇪🇬';
+  }
 }
 
 // Render Timeline
@@ -358,7 +366,7 @@ function renderPopeCards() {
 function togglePopeCard(index) {
   const content = document.getElementById(`popeContent${index}`);
   const btn = document.getElementById(`expandBtn${index}`);
-  
+
   content.classList.toggle('expanded');
   btn.classList.toggle('expanded');
 }
@@ -369,16 +377,16 @@ function switchTab(popeIndex, tabIndex) {
     const tab = document.getElementById(`tab${popeIndex}-${i}`);
     if (tab) tab.classList.remove('active');
   }
-  
+
   // Remove active class from all tab buttons for this pope
   const popeCard = document.getElementById('popeCards').children[popeIndex];
   const tabButtons = popeCard.querySelectorAll('.tab-btn');
   tabButtons.forEach(btn => btn.classList.remove('active'));
-  
+
   // Activate selected tab
   const selectedTab = document.getElementById(`tab${popeIndex}-${tabIndex}`);
   if (selectedTab) selectedTab.classList.add('active');
-  
+
   // Activate selected button
   if (tabButtons[tabIndex]) tabButtons[tabIndex].classList.add('active');
 }
@@ -387,7 +395,7 @@ function switchTab(popeIndex, tabIndex) {
 function renderImpactAnalysis() {
   const container = document.getElementById('impactGrid');
   const popeNames = ['Macarius III', 'Joseph II', 'Cyril VI', 'Shenouda III', 'Tawadros II'];
-  
+
   container.innerHTML = impactDimensions.map(dimension => {
     const avgScore = dimension.scores.reduce((a, b) => a + b, 0) / dimension.scores.length;
     return `
@@ -423,7 +431,7 @@ function renderAccordion() {
 function toggleAccordion(index) {
   const header = document.getElementById(`accordionHeader${index}`);
   const content = document.getElementById(`accordionContent${index}`);
-  
+
   header.classList.toggle('active');
   content.classList.toggle('active');
 }
@@ -446,7 +454,7 @@ function renderComparisonTable() {
 function setupScrollEffects() {
   const sections = document.querySelectorAll('.section');
   const backToTop = document.getElementById('backToTop');
-  
+
   const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
@@ -454,9 +462,9 @@ function setupScrollEffects() {
       }
     });
   }, { threshold: 0.1 });
-  
+
   sections.forEach(section => observer.observe(section));
-  
+
   // Back to top button
   window.addEventListener('scroll', () => {
     if (window.pageYOffset > 500) {
@@ -470,11 +478,11 @@ function setupScrollEffects() {
 // Setup Navigation
 function setupNavigation() {
   const navLinks = document.querySelectorAll('.nav-links a');
-  
+
   window.addEventListener('scroll', () => {
     let current = '';
     const sections = document.querySelectorAll('.section, .hero');
-    
+
     sections.forEach(section => {
       const sectionTop = section.offsetTop;
       const sectionHeight = section.clientHeight;
@@ -482,7 +490,7 @@ function setupNavigation() {
         current = section.getAttribute('id');
       }
     });
-    
+
     navLinks.forEach(link => {
       link.classList.remove('active');
       if (link.getAttribute('href').substring(1) === current) {
@@ -502,13 +510,6 @@ function toggleMenu() {
 function scrollToTop() {
   window.scrollTo({ top: 0, behavior: 'smooth' });
 }
-
-// Expose handlers for inline event bindings
-window.togglePopeCard = togglePopeCard;
-window.switchTab = switchTab;
-window.toggleAccordion = toggleAccordion;
-window.toggleMenu = toggleMenu;
-window.scrollToTop = scrollToTop;
 
 // Initialize on page load
 window.addEventListener('DOMContentLoaded', init);
