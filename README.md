@@ -1,4 +1,4 @@
-# CopticPopes
+# CopticPopes - VIEW ON GITHUB PAGES
 
 A full education experience on the last five Coptic Orthodox Popes.
 
